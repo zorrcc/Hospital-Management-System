@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: BLUE;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="357.0" layoutY="282.0" mnemonicParsing="false" onAction="#onBtnStartandBackClick" prefHeight="45.0" prefWidth="86.0" text="START">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="21.0" />
+               </font>
+            </Button>
+            <Text layoutX="195.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO HOSPITAL MANAGEMENT SYSTEM">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="283.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK HERE TO GO INTO THE SYSTEM">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="309.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----&gt;">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Pane prefHeight="87.0" prefWidth="800.0" style="-fx-background-color: YELLOW;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="223.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
+               </font>
+            </Text>
+            <Label fx:id="time" layoutX="616.0" layoutY="43.0" prefHeight="32.0" prefWidth="101.0">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

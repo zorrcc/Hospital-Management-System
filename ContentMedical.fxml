@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MedicalController">
+   <top>
+      <Pane prefHeight="87.0" prefWidth="800.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="223.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="89.0" prefWidth="800.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="95.0" layoutY="28.0" mnemonicParsing="false" onAction="#onBtnMedicalAddClick" style="-fx-background-color: blue;" text="Add Data" textFill="YELLOW">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="605.0" layoutY="28.0" mnemonicParsing="false" onAction="#onBtnStartandBackClick" style="-fx-background-color: blue;" text="Back To Menu" textFill="YELLOW">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <Pane prefHeight="410.0" prefWidth="800.0" style="-fx-background-color: Blue;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="55.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medical Section">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="25.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tbMedical" editable="true" layoutX="18.0" layoutY="77.0" prefHeight="327.0" prefWidth="777.0" style="-fx-background-color: yellow;">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="111.20001220703125" text="Name" />
+                <TableColumn fx:id="manufacturer" prefWidth="194.4000244140625" text="Manufacturer" />
+                  <TableColumn fx:id="expiryDate" prefWidth="212.800048828125" text="ExpiryDate" />
+                  <TableColumn fx:id="cost" prefWidth="212.0" text="Cost" />
+                  <TableColumn fx:id="count" prefWidth="93.5999755859375" text="Count" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children></Pane>
+   </center>
+</BorderPane>

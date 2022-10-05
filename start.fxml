@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <top>
+      <Pane prefHeight="87.0" prefWidth="600.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="216.0" layoutY="35.0" text="HOSPITAL MANAGEMENT SYSTEM">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="time" layoutX="594.0" layoutY="36.0" prefHeight="39.0" prefWidth="112.0">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="167.0" layoutY="106.0" mnemonicParsing="false" onAction="#onBtnDoctorClick" text="1. Doctors">
+                     <font>
+                        <Font name="Tw Cen MT Condensed Extra Bold" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="481.0" layoutY="106.0" mnemonicParsing="false" onAction="#onBtnPatientClick" text="2. Patients ">
+                     <font>
+                        <Font name="Tw Cen MT Condensed Extra Bold" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="160.0" layoutY="231.0" mnemonicParsing="false" onAction="#onBtnMedicalClick" text="3. Medicals">
+                     <font>
+                        <Font name="Tw Cen MT Condensed Extra Bold" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="465.0" layoutY="231.0" mnemonicParsing="false" onAction="#onBtnLabClick" text="4. Laboratories">
+                     <font>
+                        <Font name="Tw Cen MT Condensed Extra Bold" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="160.0" layoutY="350.0" mnemonicParsing="false" onAction="#onBtnFacClick" text="5. Facilities">
+                     <font>
+                        <Font name="Tw Cen MT Condensed Extra Bold" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="494.0" layoutY="350.0" mnemonicParsing="false" onAction="#onBtnStaffClick" text="6. Staffs">
+                     <font>
+                        <Font name="Tw Cen MT Condensed Extra Bold" size="23.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
